@@ -1,0 +1,98 @@
+.hero-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: $hero-bckgr;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  background-image: radial-gradient(circle at center, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url("../img/hero/hero-bg-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/hero/hero-bg-mobile_x2.jpg");
+  }
+
+  @media screen and (min-width: 767px) {
+    background-image: url("../img/hero/hero-bg-tablet.jpg");
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/hero/hero-bg-tablet_x2.jpg");
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url("../img/hero/hero-bg-desk.jpg");
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/hero/hero-bg-desk_x2.jpg");
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+/* @include for-size(desktop) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url("../img/Hero-backgrnd.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center, center;
+  } */
+
+/* .hero-text-container {
+  margin-left: 45px;
+  margin-right: 45px;
+
+  @include for-size(tablet) {
+    margin-left: 179px;
+    margin-right: 179px;
+  }
+
+  @include for-size(desktop) {
+    margin-left: 250px;
+    margin-right: 250px;
+  }
+} */
+
+.hero-text {
+  margin-bottom: 30px;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $white;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+
+.hero-button {
+  margin-top: 30px;
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  background-color: $logo-web;
+  border: 0px;
+}
+
+.hero-buttext {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  color: $white;
+  letter-spacing: 0.06em;
+}

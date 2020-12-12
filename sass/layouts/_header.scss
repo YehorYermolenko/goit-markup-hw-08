@@ -1,0 +1,137 @@
+header * {
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  display: inline-block;
+}
+
+header ul a:hover,
+header ul a:focus {
+  color: $logo-web;
+  fill: $logo-web;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.active-page {
+  position: relative;
+}
+
+.active-page::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: $logo-web;
+  bottom: 0px;
+  bottom: -32px;
+}
+
+.mailtel-nav-mail-icon {
+  display: inherit;
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.mailtel-nav-tel-icon {
+  display: inherit;
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-header {
+  margin-top: auto;
+  padding-bottom: 0px;
+  border-bottom: 1px solid #ececec;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  height: 80px;
+}
+
+.header-div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+}
+
+.nav {
+  margin-left: 93px;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: none;
+}
+
+.site-nav {
+  // display: flex;
+  display: none;
+}
+
+.site-nav > .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.site-nav a {
+  color: $logo-header;
+}
+
+.mailtel-nav {
+  display: none;
+  color: $text;
+  margin-left: auto;
+}
+
+.mailtel-nav .tel {
+  padding-left: 50px;
+}
+
+.logo-web {
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  color: $logo-web;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  flex-basis: 1;
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  color: $logo-header;
+}
+.burger-menu {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  margin-left: auto;
+}
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}

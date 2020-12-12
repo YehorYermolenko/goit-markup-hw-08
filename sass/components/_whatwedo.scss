@@ -1,0 +1,44 @@
+.section .about-us-title {
+  font-weight: 700;
+  font-size: 36px;
+  margin: 0;
+  margin-bottom: 50px;
+  line-height: 1.17;
+  text-align: center;
+  color: $title;
+}
+
+.what-we-do {
+  display: none;
+  padding-top: 47px;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
+
+.what-we-do-list {
+  display: flex;
+}
+
+.what-we-do-img {
+  position: relative;
+
+  &:not(:first-child) {
+    margin-left: 30px;
+  }
+}
+
+.what-we-do-overlay {
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ffffff;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+}

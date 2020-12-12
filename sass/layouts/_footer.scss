@@ -1,0 +1,74 @@
+footer * {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+.logo-footer {
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  color: $white;
+}
+
+.footer-widget {
+  margin-bottom: 60px;
+
+  @media screen and(min-width:768px) {
+    width: 50%;
+  }
+
+  @media screen and(min-width:1200px) {
+    margin-bottom: 0;
+    text-align: left;
+  }
+}
+
+.footer {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+
+  .adress {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $white;
+    font-style: normal;
+  }
+
+  .contacts-list li {
+    margin-bottom: 9px;
+    list-style: none;
+  }
+
+  .list {
+    padding: 0;
+  }
+
+  .mailtel {
+    font-style: normal;
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.contacts-list {
+  margin-top: 20px;
+}
+
+.footer-container {
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}

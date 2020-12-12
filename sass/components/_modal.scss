@@ -1,0 +1,224 @@
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $modal-window-background;
+  z-index: 100;
+  opacity: 1;
+  transition: all 0.5s ease-in;
+  visibility: visible;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: animate 100ms;
+  width: 100%;
+  max-width: 450px;
+  height: 609px;
+  background-color: $white;
+  padding: 40px;
+  transition: transform 0.5s;
+  z-index: 50;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  &::before {
+    content: "";
+  }
+
+  @media screen and(min-width: 768px) {
+    top: 50%;
+    width: 450px;
+  }
+  @media screen and(min-width: 1230px) {
+    top: 50%;
+    width: 100%;
+    max-width: 528px;
+    height: 581px;
+  }
+}
+
+.modal-close-btn {
+  position: absolute;
+  display: inline-flex;
+  top: 8px;
+  right: 8px;
+  background-color: $white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  padding: 0;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  justify-content: center;
+  cursor: pointer;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    fill: $logo-web;
+  }
+}
+
+.modal-form {
+  color: $text;
+}
+
+.name-form-icon {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 106px;
+  left: 56px;
+}
+
+.tel-form-icon {
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  top: 173px;
+  left: 56px;
+}
+
+.mail-form-icon {
+  width: 15px;
+  height: 13px;
+  position: absolute;
+  top: 241px;
+  left: 56px;
+}
+
+.modal-header-text {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $title;
+  margin-bottom: 12px;
+
+  @media screen and(min-width: 1200px) {
+    width: 100%;
+  }
+}
+
+.field {
+  width: 100%;
+  height: 38px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  padding: 10px 27px 10px 45px;
+  outline: none;
+}
+
+.field:hover + .modal-icon,
+.field:hover,
+.field:focus + .modal-icon,
+.field:focus {
+  border-color: $logo-web;
+  transition: all 0.5s ease-in;
+  fill: $logo-web;
+}
+
+.comment-field {
+  width: 100%;
+  line-height: 1.4;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  padding: 12px 16px;
+  resize: none;
+  height: 120px;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    border-color: $logo-web;
+    transition: all 0.2s ease-in;
+  }
+}
+
+.modal-checkbox {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.checkbox-check {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-left: -20px;
+  background-repeat: no-repeat;
+}
+
+.modal-checkbox-input {
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+}
+
+.modal-checkbox-input:focus + .checkbox-check {
+  outline: 2px green;
+  background-color: $logo-web;
+  background-image: url(../svg/check.svg);
+}
+
+.agreement {
+  padding-left: 20px;
+}
+
+.agreement-link {
+  color: $logo-web;
+}
+
+.modal-button-div {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.modal-sendform-button {
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  background-color: $logo-web;
+  border: 0px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    transition-duration: 250ms;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.modal-sendform-buttext {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  color: $white;
+  letter-spacing: 0.06em;
+}
