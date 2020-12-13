@@ -11,33 +11,52 @@
     <link rel="stylesheet" href="./css/portfolio.min.css" />
   </head>
   <body>
-    <!-- <header class="page-header">
-      <div class="container header-container">
-        <div class="header-div">
-          <div>
-            <a href="" class="logo"><span class="logo-web">Web</span>Studio</a>
-          </div>
-          <nav class="nav">
-            <ul class="site-nav">
-              <li class="item"><a href="./index.html">Студия</a></li>
-              <li class="item active-page"><a href="./portfolio.html">Портфолио</a></li>
-              <li class="item"><a href="#contacts">Контакты</a></li>
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <a href="./index.html" class="logo">Web<span class="logo-span">Studio</span></a>
+
+          <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu">
+            <svg class="burger-menu" data-menu-button width="24" height="18" aria-label="Переключатель мобильного меню">
+              <use class="icon-menu" width="24" height="16" href="./svg/sprite.svg#burger-btn"></use>
+              <use class="icon-cross" width="18" height="18" href="./svg/sprite.svg#close-burger-btn"></use>
+            </svg>
+          </button>
+
+          <div class="menu-container" data-menu>
+            <ul class="menu-list">
+              <li class="menu-item">
+                <a href="./index.html" class="link current">Студия</a>
+              </li>
+              <li class="menu-item">
+                <a href="./portfolio.html" class="link">Портфолио</a>
+              </li>
+              <li class="menu-item">
+                <a href="#contacts" class="link">Контакты</a>
+              </li>
             </ul>
-          </nav>
-        </div>
-        <ul class="mailtel-nav">
-          <li>
-            <a class="mailtel-nav-mail" href="mailto:info@devstudio.com"
-              ><svg class="mailtel-nav-mail-icon"><use href="./svg/sprite.svg#mail-icon"></use></svg>info@devstudio.com</a>
-          </li>
-          <li>
-            <a class="tel mailtel-nav-tel" href="tel:+380961111111"
-              ><svg class="mailtel-nav-tel-icon"><use href="./svg/sprite.svg#tel-icon"></use></svg>+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+            <ul class="contacts-list list">
+              <li class="contacts-item">
+                <a class="contacts link" href="mailto:info@devstudio.com">
+                  <svg class="contacts-svg" width="16" height="11">
+                    <use href="./svg/sprite.svg#mail-icon"></use>
+                  </svg>
+                  info@devstudio.com</a
+                >
+              </li>
+              <li class="contacts-item">
+                <a class="contacts link" href="telto:+380961111111">
+                  <svg class="contacts-svg" width="10" height="15">
+                    <use href="./svg/sprite.svg#tel-icon"></use>
+                  </svg>
+                  +38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
-    </header> -->
+    </header>
     <main>
       <!-- Portfolio section  -->
       <section class="section container port-list">
@@ -193,9 +212,9 @@
     <footer class="footer">
       <div class="container footer-container">
         <div class="footer-widget">
-          <a href="#top" lang="en" class="logo-footer"><span class="logo-web">Web</span>Studio</a>
+          <a href="#top" lang="en" class="logo-footer"><span class="logo">Web</span>Studio</a>
           <address id="contacts">
-            <ul class="contacts-list">
+            <ul class="contacts-list-footer">
               <li>
                 <a href="https://goo.gl/maps/G5o3masEWsuHxi1A7" target="_blank" rel="noopener noreferer" class="adress"
                   >г. Киев, пр-т Леси Украинки, 26</a

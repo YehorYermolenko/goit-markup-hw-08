@@ -21,14 +21,13 @@ body * {
   }
 }
 
-/* @media screen and (min-width: 480px) {
-  .section {
-    width: 480px;
-  }
-} */
-
-.list {
+.list,
+li {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+a {
+  text-decoration: none;
 }
