@@ -35,34 +35,6 @@
     padding-bottom: 200px;
   }
 }
-/* @include for-size(desktop) {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    max-width: 1600px;
-    height: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url("../img/Hero-backgrnd.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center, center;
-  } */
-
-/* .hero-text-container {
-  margin-left: 45px;
-  margin-right: 45px;
-
-  @include for-size(tablet) {
-    margin-left: 179px;
-    margin-right: 179px;
-  }
-
-  @include for-size(desktop) {
-    margin-left: 250px;
-    margin-right: 250px;
-  }
-} */
 
 .hero-text {
   margin-bottom: 30px;
